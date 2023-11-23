@@ -1,0 +1,15 @@
+{%  extends 'base.html'  %}
+
+{% block cambio %}
+
+    {% for curso in cursos %} {#  Itero cada uno de los cursos #}
+
+    <h2> {{ curso.nombre }} </h2>
+        <p class="lead mb-0">
+            numero de camada {{ curso.camada }}
+        </p>
+
+<hr>
+    {% endfor %}
+
+{% endblock %}
